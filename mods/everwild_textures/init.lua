@@ -1,0 +1,1 @@
+-- Texture assets are loaded by Minetest from this mod's textures directory.
