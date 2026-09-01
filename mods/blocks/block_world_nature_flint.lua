@@ -12,19 +12,20 @@ local item_drop_list = {
 
     [""] = {
         loot = {
-            {"everwild:flint", 0.7, 0}
+            {"everwild_items:flint", 0.2}
         }
     },
 
     ["everwild_items:stick"]={
         loot={
-            {"everwild:flint", 0.8, 3}
+            {"everwild_items:flint", 0.3}
         }
     },
 
     ["everwild_items:flint"] = {
+        damage=10,
         loot = {
-            {"everwild:flint", 0.9, 5}
+            {"everwild_items:flint", 0.5}
         }
     },
 

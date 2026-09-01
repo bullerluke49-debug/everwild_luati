@@ -28,23 +28,31 @@ local item_drop_list = {
 
     [""] = {
         loot = {
-            {"everwild_items:stick", 0.2, 0}
+            {"everwild_items:stick", 0.2, 0,0,10}
         }
     },
 
     ["everwild_items:stick"]={
         loot={
-            {"everwild_items:stick", 0.3, 10}
+            {"everwild_items:stick", 0.3,0,10}
         }
     },
 
     ["everwild_items:flint"] = {
+        damage=45,
         loot = {
-            {"everwild_items:stick", 0.45, 1000},
-            {"everwild:leafs", 0.01, 30000}
+            {"everwild_items:stick", 0.25,10},
+            {"everwild:leafs", 0.01,10}
         }
     },
 
+     ["everwild_items:flint_dagger"] = {
+        damage=25,
+        loot = {
+            {"everwild_items:stick", 0.25,10},
+            {"everwild:leafs", 0.01, 10000}
+        }
+    },
 }
 
-drops("everwild:leafs",item_drop_list)
+drops("everwild:leafs", item_drop_list, 1000, 5)

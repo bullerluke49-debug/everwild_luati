@@ -26,7 +26,7 @@ function player_inventory_formspec(player_character)
         "formspec_version[4]" ..
         "size[10.35,10]" ..
         "label[0.5,0.3;Inventory]" ..
-        "list[current_player;craft;0.35,6;2,2;]"..
+        "list[current_player;craft;0.35,6;2,3;]"..
         "list[current_player;craftpreview;2.95,6.5;1,1;]"..
         "list[current_player;main;0.35,8.7;8,1;]"
     )

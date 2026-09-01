@@ -19,6 +19,8 @@ function create_plant(name, description, drawtype, texture, groups, drops, visua
         param2_giver=math.random(0,7)
     end
 
+
+
     
     core.register_node(name, {
     description = description,
@@ -38,6 +40,7 @@ function create_plant(name, description, drawtype, texture, groups, drops, visua
     groups = groups,
     drop = drops,
     use_texture_alpha = use_texture_alpha
+
     })
 
     if decoration ~= nil then

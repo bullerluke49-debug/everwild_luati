@@ -1,0 +1,15 @@
+local modpath = core.get_modpath(core.get_current_modname())
+local lib_path = core.get_modpath("everwild_library")
+dofile(modpath.."/crafting_item_tool_rough_flint_pickhead.lua")
+dofile(modpath.."/crafting_item_flint_dagger.lua")
+dofile(modpath.."/crafting_item_flint_pickaxe.lua")
+dofile(modpath.."/crafting_item_flint_pickaxe.lua")
+dofile(modpath.."/crafting_item_rough_ripped_grass_rope.lua")
+dofile(lib_path .. "/achievevements.lua")
+
+core.register_on_craft(function(itemstack,player,old_craft_grid,inv)
+    local item_name = itemstack:get_name()
+    local player_name = player:get_player_name()
+    
+    check_achievement(player_name ,item_name)
+end)
